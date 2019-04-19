@@ -205,9 +205,9 @@ int SGX_CDECL main(int argc, char *argv[])
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
     
-    printf("Info: SampleEnclave successfully returned.\n");
+    //printf("Info: SampleEnclave successfully returned.\n");
 
-    printf("Enter a character before exit ...\n");
+    //printf("Enter a character before exit ...\n");
     getchar();
     return 0;
 }
