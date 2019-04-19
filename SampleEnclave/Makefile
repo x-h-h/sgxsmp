@@ -31,7 +31,7 @@
 
 ######## SGX SDK Settings ########
 
-SGX_SDK ?= ~/sgx/linux-sgx/linux/installer/bin/sgxsdk
+SGX_SDK ?= /home/wande/sgx/linux-sgx/linux/installer/bin/sgxsdk
 SGX_MODE ?= HW
 SGX_ARCH ?= x64
 SGX_DEBUG ?= 1
