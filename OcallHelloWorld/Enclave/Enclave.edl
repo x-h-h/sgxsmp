@@ -1,0 +1,14 @@
+/* Enclave.edl - Top EDL file. */
+
+enclave {
+    
+    include "user_types.h" /* buffer_t */
+
+    trusted {
+        public void Ecall_PrintHelloWorld();
+    }
+    untrusted {
+        void Ocall_PrintHelloWorld();
+    };
+
+};
