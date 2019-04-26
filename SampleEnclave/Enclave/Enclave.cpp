@@ -47,5 +47,7 @@ int printf(const char* fmt, ...)
     vsnprintf(buf, BUFSIZ, fmt, ap);
     va_end(ap);
     ocall_print_string(buf);
+    putchar("a");
     return (int)strnlen(buf, BUFSIZ - 1) + 1;
 }
+
