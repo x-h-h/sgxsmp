@@ -250,9 +250,9 @@ int SGX_CDECL main(int argc, char *argv[])
     sgx_destroy_enclave(global_eid);
    
     initialize_enclave();
+    sgx_destroy_enclave(global_eid);
     clock_t c_end = clock();
     printf("%d",c_end);/*
-    sgx_destroy_enclave(global_eid);
     initialize_enclave();
     sgx_destroy_enclave(global_eid);*/
     return 0;
