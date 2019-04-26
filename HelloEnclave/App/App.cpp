@@ -238,7 +238,7 @@ int SGX_CDECL main(int argc, char *argv[])
 
     /* Initialize the enclave */
     clock_t c_start = clock();
-    printf("%d",c_start);
+    printf("%d\n",c_start);
     if(initialize_enclave() < 0){
         printf("Enter a character before exit ...\n");
         getchar();
