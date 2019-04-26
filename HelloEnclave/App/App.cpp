@@ -36,6 +36,7 @@
 
 # include <unistd.h>
 # include <pwd.h>
+# include <time.h>
 # define MAX_PATH FILENAME_MAX
 
 #include "sgx_urts.h"
@@ -236,6 +237,7 @@ int SGX_CDECL main(int argc, char *argv[])
 
 
     /* Initialize the enclave */
+    clock_t clock();
     if(initialize_enclave() < 0){
         printf("Enter a character before exit ...\n");
         getchar();
@@ -246,10 +248,11 @@ int SGX_CDECL main(int argc, char *argv[])
 
     /* Destroy the enclave */
     sgx_destroy_enclave(global_eid);
-    initialize_enclave();
+    clock_t clock();
+    /*initialize_enclave();
     sgx_destroy_enclave(global_eid);
     initialize_enclave();
-    sgx_destroy_enclave(global_eid);
+    sgx_destroy_enclave(global_eid);*/
     return 0;
 }
 
