@@ -53,7 +53,7 @@ int initialize_enclave(sgx_enclave_id_t *eid, const std::string &launch_token_pa
   }
 
   /* Step 3: save the launch token if it is updated */
-  if (updated == FALSE || fp == NULL)
+  if (updated == 0 || fp == NULL)
   {
     /* if the token is not updated, or file handler is invalid, do not perform saving */
     if (fp != NULL)
