@@ -241,11 +241,13 @@ int SGX_CDECL main(int argc, char *argv[])
         getchar();
         return -1; 
     }
-    initialize_enclave();
  
     printf_helloworld(global_eid);
 
     /* Destroy the enclave */
+    sgx_destroy_enclave(global_eid);
+
+    initialize_enclave();
     sgx_destroy_enclave(global_eid);
     
     return 0;
