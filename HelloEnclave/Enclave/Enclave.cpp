@@ -55,3 +55,9 @@ void printf_helloworld()
     printf("Hello World\n");
 }
 
+void printf_helloworld()
+{
+    int a = 1;
+    int b = 2;
+    printf(a+b);
+}

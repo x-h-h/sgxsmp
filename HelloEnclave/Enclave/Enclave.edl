@@ -41,6 +41,7 @@ enclave {
     
     trusted {
         public void printf_helloworld();
+        public void printf_plus();
     };
 
     /* 
