@@ -55,9 +55,9 @@ void printf_helloworld()
     printf("Hello World\n");
 }
 
-void printf_helloworld()
+void printf_plus()
 {
-    int a = 1;
-    int b = 2;
+    char a = "Hell";
+    char b = "o";
     printf(a+b);
 }
