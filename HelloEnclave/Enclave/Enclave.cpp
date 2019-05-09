@@ -61,5 +61,5 @@ void printf_plus()
     char a = 'H';
     char b = 'P';
     //char c = a + b;
-    printf(c);
+    printf(a);
 }
