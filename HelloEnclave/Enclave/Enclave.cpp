@@ -58,8 +58,8 @@ void printf_helloworld()
 
 void printf_plus()
 {
-    char a = 'H';
-    char b = 'P';
-    //char c = a + b;
-    printf(a);
+    int a = 'H';
+    int b = 'P';
+    int c = a + b;
+    printf("%d",c);
 }
